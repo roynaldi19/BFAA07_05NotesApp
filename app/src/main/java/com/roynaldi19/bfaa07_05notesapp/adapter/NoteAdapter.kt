@@ -29,7 +29,7 @@ class NoteAdapter(private val onItemClickCallback: OnItemClickCallback) :
         notifyItemChanged(position, note)
     }
 
-    fun RemoveItem(position: Int) {
+    fun removeItem(position: Int) {
         this.listNotes.removeAt(position)
         notifyItemRemoved(position)
         notifyItemRangeChanged(position, this.listNotes.size)
